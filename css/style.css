@@ -1,0 +1,254 @@
+body {
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none !important; }
+
+#main {
+  position: relative; }
+
+#scrollTop {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  #scrollTop:hover {
+    background-color: rgba(0, 0, 0, 0.6); }
+
+.steele-button {
+  border: 2px solid #fff;
+  padding: 20px 50px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .steele-button:hover {
+    color: #000;
+    background-color: #fff; }
+
+.button-black {
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .button-black:hover {
+    color: #fff;
+    background-color: #000; }
+
+.main-header {
+  background: url("../imgs/headerbg.png") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
+  width: 100%; }
+
+.top-header {
+  background-color: #fff;
+  width: 100%;
+  max-heigth: 140px;
+  padding: 24px 0; }
+
+.steele-nav {
+  float: right; }
+  .steele-nav li {
+    padding: 40px 24px;
+    float: left; }
+    .steele-nav li a {
+      display: block;
+      font-size: 18px;
+      color: #444;
+      -webkit-transition: background-color 0.3s, color 0.3s;
+      -moz-transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s, color 0.3s;
+      position: relative; }
+      .steele-nav li a:hover {
+        color: #000; }
+      .steele-nav li a.activated {
+        color: #000; }
+      .steele-nav li a:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        bottom: -8px;
+        border-radius: 10px;
+        left: 0;
+        opacity: 0; }
+      .steele-nav li a.activated:after {
+        -webkit-transition: opacity 0.3s 0.1s;
+        -moz-transition: opacity 0.3s 0.1s;
+        transition: opacity 0.3s 0.1s;
+        opacity: 1; }
+
+#logo {
+  height: 92px; }
+  #logo a {
+    display: block; }
+
+.steele-hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 180px 0;
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding: 64px; }
+  .steele-hero h1 {
+    font-weight: bold;
+    font-size: 54px;
+    margin: 0; }
+  .steele-hero h3 {
+    font-weight: 100;
+    font-size: 32px;
+    margin-top: 0; }
+
+.steele-section {
+  margin: 90px 0;
+  text-align: center; }
+  .steele-section header h1 {
+    margin: 0;
+    font-size: 80px; }
+  .steele-section > article {
+    margin-top: 170px; }
+    .steele-section > article img {
+      margin: 0 auto; }
+    .steele-section > article p {
+      font-size: 30px;
+      margin-left: 2.5em;
+      margin-right: 2.5em; }
+
+.products-gallery li {
+  width: 32%;
+  padding: 0 2%;
+  float: left; }
+  .products-gallery li:nth-child(1) {
+    padding-left: 0; }
+  .products-gallery li:nth-child(4) {
+    padding-left: 0; }
+  .products-gallery li:nth-child(3) {
+    padding-right: 0; }
+  .products-gallery li:nth-child(6) {
+    padding-right: 0; }
+
+.contact-types {
+  margin-top: 10em;
+  margin-bottom: 4em; }
+  .contact-types ul li {
+    margin-top: 8em; }
+    .contact-types ul li article h1 {
+      font-size: 36px;
+      margin-top: 0; }
+    .contact-types ul li article p {
+      font-size: 18px;
+      margin: 0; }
+      .contact-types ul li article p span {
+        font-size: 22px;
+        color: red; }
+  .contact-types header {
+    height: 50px;
+    position: relative; }
+    .contact-types header span {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .contact-types header .icon {
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      font-size: 32px;
+      display: inline-block;
+      border-radius: 50%; }
+    .contact-types header .line {
+      width: 500px;
+      height: 3px;
+      background-color: #000;
+      display: inline-block; }
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+  border: 2px solid #000;
+  outline: none;
+  background-color: transparent;
+  padding: 0 16px;
+  font-size: 16px;
+  width: 100%;
+  height: 64px;
+  margin: 10px; }
+.contact-form textarea {
+  padding: 10px 16px;
+  height: 230px; }
+.contact-form input[type="submit"] {
+  margin-top: 2em; }
+
+.contact-section {
+  margin-bottom: 0; }
+  .contact-section > article {
+    margin-top: 80px; }
+
+.main-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0; }
+  .main-footer .footer-logo img {
+    margin: 0 auto; }
+  .main-footer .footer-nav {
+    margin: 4em 0; }
+    .main-footer .footer-nav li {
+      display: inline-block; }
+      .main-footer .footer-nav li a {
+        color: #fff;
+        display: block;
+        margin: 0 16px;
+        font-size: 20px; }
+
+::-webkit-input-placeholder {
+  color: #000; }
+
+:-moz-placeholder {
+  color: #000; }
+
+::-moz-placeholder {
+  color: #000; }
+
+:-ms-input-placeholder {
+  color: #000; }
+
+.social-box p {
+  font-size: 18px; }
+.social-box ul li {
+  display: inline-block;
+  margin: 0 1em; }
+  .social-box ul li a {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 38%;
+    width: 50px;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    color: #333; }
+
+/*# sourceMappingURL=style.css.map */
