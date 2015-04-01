@@ -2,7 +2,7 @@
 $(function(){
 	var navItems = $(".steele-nav a");
 	var body = $("html, body");
-	var scrollTop = $("#scrollTop");
+	var scrollToTop = $("#scrollTop");
 	navItems.click(function(e){
 		e.preventDefault();
 		$this = $(this);
@@ -13,10 +13,19 @@ $(function(){
 			scrollTop: target.offset().top 
 			}, '2000');
 	});
-	scrollTop.click(function(e){
+	scrollToTop.click(function(e){
 		e.preventDefault();
 		body.animate({
 			scrollTop: 0
 			}, '2000');
+	});
+});
+
+$(function(){
+	$navTrigger = $('.nav-trigger'),
+	$nav = $('.steele-nav');
+
+	$navTrigger.click(function(e){
+		$nav.toggleClass('slide-nav');
 	});
 });

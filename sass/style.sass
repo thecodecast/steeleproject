@@ -2,7 +2,6 @@
 @import 'variables'
 @import 'layout/layout'
 @import 'theme/theme'
-@import 'tools/tools'
 @import 'modules/modules'
 
 body
@@ -61,10 +60,19 @@ a
 	width: 100%
 
 .top-header
-	background-color: #fff
+	background-color: rgba(255,255,255,0.9)
 	width: 100%
 	max-heigth: 140px
 	padding: 24px 0
+	+transition(padding 0.3s ease-in, position 0.3s ease-in)
+	&.shrink-nav
+		position: fixed
+		top: 0
+		z-index: 2000
+		padding: 5px 0
+		border-bottom: 2px solid #333
+	.nav-trigger
+		display: none
 
 .steele-nav
 	float: right
@@ -97,6 +105,7 @@ a
 
 #logo
 	height: 92px
+	margin-top: 6px
 	a
 		display: block
 
@@ -250,3 +259,5 @@ a
 				height: 50px
 				line-height: 50px
 				color: #333
+
+@import 'tools/tools'

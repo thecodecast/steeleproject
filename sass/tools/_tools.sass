@@ -1,0 +1,93 @@
+////@media screen and (max-width:1200px)
+
+//@media screen and (max-width:991px)
+//@media screen and (max-width:680px)
+@media screen and (max-width:640px)
+  
+  .steele-button
+    padding: 10px 25px
+    display: inline-block
+    color: #fff
+    font-size: 14px
+    background-color: transparent
+    +transition(background-color 0.3s)
+    &:hover
+      color: #000
+      background-color: #fff
+
+  .top-header
+    background-color: rgba(255,255,255,0.9)
+    width: 100%
+    max-heigth: 140px
+    padding: 10px 0
+    .nav-trigger
+      display: block
+      font-size: 25px
+      margin-top: 21px
+      float: right
+      cursor: pointer
+      z-index: 3001
+
+  #logo
+    height: auto
+    margin-top: 0
+    img
+      width: 90px
+
+  .steele-nav
+    display: none
+    position: absolute
+    background-color: #fff
+    z-index: 3000
+    top: -10px
+    right: -100%
+    width: 100%
+    min-height: 100vh
+    &.slide-nav
+      +transform(translateX(-100%))
+      display: block
+    li
+      float: none
+      a
+        display: inline-block
+
+  .steele-hero
+    background-color: rgba(0,0,0,0.5)
+    width: 100%
+    margin: 60px 0
+    display: block
+    text-align: center
+    color: #fff
+    padding: 64px
+    h1
+      font-weight: bold
+      font-size: 36px
+      margin: 0
+    h3
+      font-weight: 100
+      font-size: 18px
+      margin-top: 0
+
+  #about
+    article
+      img
+        width: 10%
+
+  .steele-section
+    margin: 100px 0
+    text-align: center
+    header h1
+      margin: 0
+      font-size: 48px
+    > article
+      margin-top: 20px
+      img
+        margin: 0 auto
+      p
+        font-size: 20px
+        margin-left: 0.5em
+        margin-right: 0.5em
+
+  .footer-nav
+    display: none
+//@media screen and (max-width:465px)
